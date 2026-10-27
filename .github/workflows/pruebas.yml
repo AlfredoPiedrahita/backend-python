@@ -1,0 +1,21 @@
+name: Pruebas de Python
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  ejecutar-pruebas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el codigo
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Ejecutar pruebas
+        run: python -m unittest dun directorio llamadoiscover

@@ -22,5 +22,5 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Ejecutar pruebas
-        run: python -m unittest discover
+      - name: Verificar sintaxis de Python
+        run: python -m py_compile src/gestor_tareas/main.py

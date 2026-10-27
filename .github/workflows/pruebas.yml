@@ -7,7 +7,7 @@ on:
       - 'feature/**'
   pull_request:
     branches:
-      - master]
+      - master
 
 jobs:
   ejecutar-pruebas:
@@ -23,4 +23,4 @@ jobs:
           python-version: "3.13"
 
       - name: Ejecutar pruebas
-        run: python -m unittest dun directorio llamadoiscover
+        run: python -m unittest discover

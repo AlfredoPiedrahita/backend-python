@@ -2,7 +2,12 @@ name: Pruebas de Python
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
+      - 'feature/**'
+  pull_request:
+    branches:
+      - master]
 
 jobs:
   ejecutar-pruebas:
